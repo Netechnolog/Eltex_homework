@@ -1,1 +1,1 @@
-# eltex_erlang_homework
+# eltex_C_homework
