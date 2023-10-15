@@ -23,9 +23,10 @@ int main(void) {
   chaild_pid = fork();
   if(chaild_pid == 0){
   execv(arg1, ptr);
-  if((strcmp(COMMAND, "exit")))
-  exit();
+  if((strcmp(COMMAND, "exit"))){
   printf("%s:Command: not found\n", COMMAND);
+  }
+  exit(EXIT_SUCCESS);
   }
   else{
   wait(&status);
